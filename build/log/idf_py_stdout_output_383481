@@ -1,0 +1,235 @@
+Command: /home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python /home/alex12/.espressif/v6.0.2/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/salt-level-detector.elf /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader/bootloader.elf -m '/home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python' '/home/alex12/.espressif/v6.0.2/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Aug 24 2026 04:33:46[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c0a0020 size=20580h (132480) map[0m
+[0;32mI (111) esp_image: segment 1: paddr=000305a8 vaddr=3fc97b00 size=05070h ( 20592) load[0m
+[0;32mI (115) esp_image: segment 2: paddr=00035620 vaddr=40374000 size=0a9f8h ( 43512) load[0m
+[0;32mI (126) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=98bb0h (625584) map[0m
+[0;32mI (240) esp_image: segment 4: paddr=000d8bd8 vaddr=4037e9f8 size=0908ch ( 37004) load[0m
+[0;32mI (249) esp_image: segment 5: paddr=000e1c6c vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (258) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (258) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Multicore app[0m
+[0;32mI (276) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (277) cpu_start: Pro cpu start user code[0m
+[0;32mI (277) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (279) app_init: Application information:[0m
+[0;32mI (282) app_init: Project name:     salt-level-detector[0m
+[0;32mI (287) app_init: App version:      3dd23d8-dirty[0m
+[0;32mI (292) app_init: Compile time:     Aug 24 2026 04:37:03[0m
+[0;32mI (297) app_init: ELF file SHA256:  429d52a8e...[0m
+[0;32mI (301) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (305) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (309) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (313) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (317) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (323) heap_init: At 3FCA0FA0 len 00048770 (289 KiB): RAM[0m
+[0;32mI (328) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (333) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (338) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (345) spi_flash: detected chip: generic[0m
+[0;32mI (347) spi_flash: flash io: dio[0m
+[0;33mW (350) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (363) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (369) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (376) main_task: Started on CPU0[0m
+[0;32mI (396) main_task: Calling app_main()[0m
+[0;32mI (416) salt_level_detector: Creating LwIP core task...[0m
+[0;32mI (416) salt_level_detector: Creating a system event task...[0m
+[0;32mI (416) salt_level_detector: Creating network interface instance...[0m
+[0;32mI (426) salt_level_detector: Intializing the WiFi driver...[0m
+[0;32mI (426) pp: pp rom version: e7ae62f[0m
+[0;32mI (436) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (446) wifi:wifi driver task: 3fceeac0, prio:23, stack:6656, core=0[0m
+[0;32mI (456) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (456) wifi:wifi certification version: v7.0[0m
+[0;32mI (456) wifi:config NVS flash: enabled[0m
+[0;32mI (456) wifi:config nano formatting: disabled[0m
+[0;32mI (456) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (466) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (466) wifi:Init management short buffer num: 32[0m
+[0;32mI (476) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (476) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (476) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (486) wifi:Init static rx buffer num: 10[0m
+[0;32mI (486) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (496) wifi_init: rx ba win: 6[0m
+[0;32mI (496) wifi_init: accept mbox: 6[0m
+[0;32mI (496) wifi_init: tcpip mbox: 32[0m
+[0;32mI (496) wifi_init: udp mbox: 6[0m
+[0;32mI (506) wifi_init: tcp mbox: 6[0m
+[0;32mI (506) wifi_init: tcp tx win: 5760[0m
+[0;32mI (506) wifi_init: tcp rx win: 5760[0m
+[0;32mI (516) wifi_init: tcp mss: 1440[0m
+[0;32mI (516) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (516) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (526) salt_level_detector: NVS handle open successfully.[0m
+[0;32mI (526) salt_level_detector: Found SSID in NVS: NetGEAR-24G[0m
+[0;32mI (536) salt_level_detector: Found Password in NVS.[0m
+[0;32mI (536) salt_level_detector: Configuring WiFi driver as station...[0m
+[0;32mI (546) salt_level_detector: Starting the WiFi driver...[0m
+[0;32mI (546) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (596) wifi:mode : sta (e8:f6:0a:a7:e2:64)[0m
+[0;32mI (596) wifi:enable tsf[0m
+[0;32mI (596) salt_level_detector: WIFI_EVENT_STA_START: Station mode started.[0m
+[0;32mI (596) salt_level_detector: Attempting connection...[0m
+[0;32mI (616) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (616) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (636) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (646) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (676) wifi:connected with NetGEAR-24G, aid = 4, channel 6, BW20, bssid = b4:b9:e6:c4:a2:26[0m
+[0;32mI (676) wifi:security: WPA2-PSK, phy: bgn, rssi: -50, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (686) wifi:pm start, type: 1[0m
+
+[0;32mI (686) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (696) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (706) salt_level_detector: WIFI_EVENT_STA_CONNECTED: Connected to AP[0m
+[0;32mI (706) salt_level_detector:   SSID: NetGEAR-24G, BSSID: b4:b9:e6:c4:a2:26, Channel: 6, AuthMode: 3[0m
+[0;32mI (716) salt_level_detector: Waiting for IP address via DHCP...[0m
+[0;32mI (716) wifi:<ba-add>idx:0 (ifx:0, b4:b9:e6:c4:a2:26), tid:6, ssn:2, winSize:64[0m
+[0;32mI (756) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (756) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1746) esp_netif_handlers: sta ip: 192.168.100.133, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (1746) salt_level_detector: IP_EVENT_STA_GOT_IP: Network Ready![0m
+[0;32mI (1746) salt_level_detector:   Assigned IP : 192.168.100.133, Gateway: 192.168.100.1, Netmask: 255.255.255.0[0m
+[0;32mI (1756) salt_level_detector: Resetting WiFi retry counter and delay.[0m
+[0;32mI (1756) salt_level_detector: Intalling new capture timer...[0m
+[0;32mI (1766) salt_level_detector: Installing new capture channel...[0m
+[0;32mI (1776) salt_level_detector: Registering capture callback...[0m
+[0;32mI (1776) salt_level_detector: Enabling capture channel...[0m
+[0;32mI (1786) salt_level_detector: Configuring Trig pin...[0m
+[0;32mI (1786) salt_level_detector: Enabling and starting capture timer...[0m
+[0;32mI (1796) salt_level_detector: Measured distance: 0.31cm, Percent height: 99.66%[0m
+[0;32mI (5986) wifi:<ba-add>idx:1 (ifx:0, b4:b9:e6:c4:a2:26), tid:0, ssn:0, winSize:64[0m
+[0;32mI (6926) salt_level_detector: Measured distance: 73.37cm, Percent height: 17.57%[0m
+[0;32mI (7436) salt_level_detector: Measured distance: 73.59cm, Percent height: 17.31%[0m
+[0;32mI (7946) salt_level_detector: Measured distance: 73.89cm, Percent height: 16.98%[0m
+[0;32mI (8456) salt_level_detector: Measured distance: 73.95cm, Percent height: 16.91%[0m
+[0;32mI (8966) salt_level_detector: Measured distance: 73.70cm, Percent height: 17.19%[0m
+[0;32mI (9476) salt_level_detector: Measured distance: 73.96cm, Percent height: 16.89%[0m
+[0;32mI (9986) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.48%[0m
+[0;32mI (10496) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (11006) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.87%[0m
+[0;32mI (11516) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (12026) salt_level_detector: Measured distance: 74.45cm, Percent height: 16.35%[0m
+[0;32mI (12536) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (13046) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (13556) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (14066) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.87%[0m
+[0;32mI (14576) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.49%[0m
+[0;32mI (15086) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (15596) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (16106) salt_level_detector: Measured distance: 74.99cm, Percent height: 15.74%[0m
+[0;32mI (16616) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (17126) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (17636) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (18146) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (18656) salt_level_detector: Measured distance: 75.47cm, Percent height: 15.20%[0m
+[0;32mI (19166) salt_level_detector: Measured distance: 75.03cm, Percent height: 15.69%[0m
+[0;32mI (19676) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.68%[0m
+[0;32mI (20186) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (20696) salt_level_detector: Measured distance: 75.17cm, Percent height: 15.54%[0m
+[0;32mI (21206) salt_level_detector: Measured distance: 75.59cm, Percent height: 15.07%[0m
+[0;32mI (21716) salt_level_detector: Measured distance: 75.34cm, Percent height: 15.34%[0m
+[0;32mI (22226) salt_level_detector: Measured distance: 75.42cm, Percent height: 15.26%[0m
+[0;32mI (22736) salt_level_detector: Measured distance: 75.46cm, Percent height: 15.21%[0m
+[0;32mI (23246) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.13%[0m
+[0;32mI (23756) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.14%[0m
+[0;32mI (24266) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.14%[0m
+[0;32mI (24776) salt_level_detector: Measured distance: 75.45cm, Percent height: 15.22%[0m
+[0;32mI (25286) salt_level_detector: Measured distance: 75.90cm, Percent height: 14.72%[0m
+[0;32mI (25796) salt_level_detector: Measured distance: 75.48cm, Percent height: 15.19%[0m
+[0;32mI (26306) salt_level_detector: Measured distance: 75.72cm, Percent height: 14.92%[0m
+[0;32mI (26816) salt_level_detector: Measured distance: 75.41cm, Percent height: 15.27%[0m
+[0;32mI (27326) salt_level_detector: Measured distance: 75.84cm, Percent height: 14.79%[0m
+[0;32mI (27836) salt_level_detector: Measured distance: 75.47cm, Percent height: 15.20%[0m
+[0;32mI (29886) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.14%[0m
+[0;32mI (30396) salt_level_detector: Measured distance: 75.90cm, Percent height: 14.72%[0m
+[0;32mI (30906) salt_level_detector: Measured distance: 75.90cm, Percent height: 14.71%[0m
+[0;32mI (32956) salt_level_detector: Measured distance: 75.66cm, Percent height: 14.99%[0m
+[0;32mI (33466) salt_level_detector: Measured distance: 75.48cm, Percent height: 15.19%[0m
+[0;32mI (33976) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.68%[0m
+[0;32mI (34486) salt_level_detector: Measured distance: 75.34cm, Percent height: 15.35%[0m
+[0;32mI (34996) salt_level_detector: Measured distance: 75.42cm, Percent height: 15.26%[0m
+[0;32mI (35506) salt_level_detector: Measured distance: 75.47cm, Percent height: 15.20%[0m
+[0;32mI (36016) salt_level_detector: Measured distance: 75.48cm, Percent height: 15.19%[0m
+[0;32mI (36526) salt_level_detector: Measured distance: 75.47cm, Percent height: 15.20%[0m
+[0;32mI (37036) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.14%[0m
+[0;32mI (37546) salt_level_detector: Measured distance: 75.54cm, Percent height: 15.13%[0m
+[0;32mI (38056) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.14%[0m
+[0;32mI (38566) salt_level_detector: Measured distance: 75.54cm, Percent height: 15.13%[0m
+[0;32mI (39076) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.13%[0m
+[0;32mI (39586) salt_level_detector: Measured distance: 75.60cm, Percent height: 15.06%[0m
+[0;32mI (39586) salt_level_detector: Seeding the random number generator[0m
+[0;32mI (39586) salt_level_detector: Loading the CA root certificate...[0m
+[0;32mI (39606) salt_level_detector: Setting hostname for TLS session...[0m
+[0;32mI (39606) salt_level_detector: Setting up the SSL/TLS structure...[0m
+[0;32mI (39606) salt_level_detector: Connecting to smtp.googlemail.com:587...[0m
+[0;32mI (39986) salt_level_detector: Connected.[0m
+
+220 smtp.googlemail.com ESMTP d2e1a72fcca58-8520ef2ffdcsm2496342b3a.25 - gsmtp
+[0;32mI (40186) salt_level_detector: Writing EHLO to server...[0m
+
+250-smtp.googlemail.com at your service, [38.192.73.217]
+250-SIZE 35882577
+250-8BITMIME
+250-STARTTLS
+250-ENHANCEDSTATUSCODE
+S
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+[0;32mI (40396) salt_level_detector: Writing STARTTLS to server...[0m
+
+220 2.0.0 Ready to start TLS
+[0;32mI (40456) salt_level_detector: Performing the SSL/TLS handshake...[0m
+[0;32mI (41696) salt_level_detector: Verifying peer X.509 certificate...[0m
+[0;32mI (41696) salt_level_detector: Certificate verified.[0m
+[0;32mI (41696) salt_level_detector: Cipher suite is TLS-ECDHE-ECDSA-WITH-AES-128-GCM-SHA256[0m
+[0;32mI (41706) salt_level_detector: Authentication...[0m
+[0;32mI (41706) salt_level_detector: Write AUTH LOGIN[0m
+[0;32mI (41766) salt_level_detector: Write USER NAME[0m
+[0;32mI (42026) salt_level_detector: Write PASSWORD[0m
+[0;32mI (42266) salt_level_detector: Write MAIL FROM[0m
+[0;32mI (42456) salt_level_detector: Write RCPT[0m
+[0;32mI (42656) salt_level_detector: Write DATA[0m
+[0;32mI (42896) salt_level_detector: Write Content[0m
+[0;32mI (43466) salt_level_detector: Email sent![0m
+
+[0;32mI (70126) salt_level_detector: Measured distance: 74.62cm, Percent height: 16.16%[0m
+[0;32mI (70636) salt_level_detector: Measured distance: 74.20cm, Percent height: 16.63%[0m
+[0;32mI (71146) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (71656) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (72166) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (72676) salt_level_detector: Measured distance: 74.45cm, Percent height: 16.35%[0m
+[0;32mI (73186) salt_level_detector: Measured distance: 74.51cm, Percent height: 16.28%[0m
+[0;32mI (73696) salt_level_detector: Measured distance: 74.51cm, Percent height: 16.28%[0m
+[0;32mI (74206) salt_level_detector: Measured distance: 74.52cm, Percent height: 16.27%[0m
+[0;32mI (74716) salt_level_detector: Measured distance: 74.51cm, Percent height: 16.28%[0m
+[0;32mI (75226) salt_level_detector: Measured distance: 74.51cm, Percent height: 16.28%[0m
+[0;32mI (75736) salt_level_detector: Measured distance: 74.57cm, Percent height: 16.22%[0m
+[0;32mI (76246) salt_level_detector: Measured distance: 74.50cm, Percent height: 16.29%[0m
+[0;32mI (76756) salt_level_detector: Measured distance: 74.14cm, Percent height: 16.70%[0m
+[0;32mI (77266) salt_level_detector: Measured distance: 73.24cm, Percent height: 17.70%[0m

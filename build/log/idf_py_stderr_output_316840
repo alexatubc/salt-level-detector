@@ -1,0 +1,8 @@
+Command: /home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python /home/alex12/.espressif/v6.0.2/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/salt-level-detector.elf /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader/bootloader.elf -m '/home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python' '/home/alex12/.espressif/v6.0.2/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x420086d7: [0;33muart_ll_get_txfifo_len[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/esp_hal_uart/esp32s3/include/hal/uart_ll.h[0m[0m:[1;31m434[0m
+[0m--- (inlined by) [0;33muart_tx_char[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/esp_driver_uart/src/uart_vfs.c[0m[0m:[1;31m190[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m

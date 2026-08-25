@@ -1,0 +1,17 @@
+Command: /home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python /home/alex12/.espressif/v6.0.2/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/salt-level-detector.elf /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader/bootloader.elf -m '/home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python' '/home/alex12/.espressif/v6.0.2/esp-idf/tools/idf.py'
+[0;33m--- esp-idf-monitor 1.9.0 on /dev/ttyACM0 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0m--- 0x40048d00: [0;33muart_rx_one_char[0m[0m in [0;32mROM[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570e8: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570f3: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x400570e5: [0;33mmemset[0m[0m in [0;32mROM[0m
+[0m--- 0x4201bc83: [0;33mmbedtls_strerror[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/mbedtls/mbedtls/library/error.c[0m[0m:[1;31m430[0m
+[0m--- 0x4200e915: [0;33msmtp_client_task[0m[0m at [0;32m/home/alex12/alex12/programming/esp32-projects/salt-level-detector/main/salt-level-detector.c[0m[0m:[1;31m839[0m
+[0m--- 0x42096116: [0;33mvPortTaskWrapper[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c[0m[0m:[1;31m147[0m
+[0m--- 0x4037ce2d: [0;33mesp_restart_noos[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c[0m[0m:[1;31m165[0m
+[0m--- 0x403c8700: [0;33m_stext[0m[0m at [0;32m??[0m[0m:[1;31m?[0m
+[0m--- 0x403c8908: [0;33mcall_start_cpu0[0m[0m at [0;32m/home/alex12/.espressif/v6.0.2/esp-idf/components/bootloader/subproject/main/bootloader_start.c[0m[0m:[1;31m27[0m
+[0m

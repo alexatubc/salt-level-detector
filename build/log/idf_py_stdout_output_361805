@@ -1,0 +1,874 @@
+Command: /home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python /home/alex12/.espressif/v6.0.2/esp-idf/tools/idf_monitor.py -p /dev/ttyACM0 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/salt-level-detector.elf /home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader/bootloader.elf -m '/home/alex12/.espressif/tools/python/v6.0.2/venv/bin/python' '/home/alex12/.espressif/v6.0.2/esp-idf/tools/idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x2b (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x14f0
+load:0x403c8700,len:0xda0
+load:0x403cb700,len:0x2f54
+entry 0x403c8908
+[0;32mI (24) boot: ESP-IDF v6.0.2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time Aug 24 2026 04:33:46[0m
+[0;32mI (25) boot: Multicore bootloader[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (28) boot: efuse block revision: v1.3[0m
+[0;32mI (31) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (35) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (39) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (43) boot: Enabling RNG early entropy source...[0m
+[0;32mI (47) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (56) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (63) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (69) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (76) boot: End of partition table[0m
+[0;32mI (79) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=1bc98h (113816) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=0002bcc0 vaddr=3fc97b00 size=04358h ( 17240) load[0m
+[0;32mI (111) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=88f1ch (560924) map[0m
+[0;32mI (214) esp_image: segment 3: paddr=000b8f44 vaddr=3fc9be58 size=00d18h (  3352) load[0m
+[0;32mI (215) esp_image: segment 4: paddr=000b9c64 vaddr=40374000 size=13a84h ( 80516) load[0m
+[0;32mI (236) esp_image: segment 5: paddr=000cd6f0 vaddr=50000000 size=00024h (    36) load[0m
+[0;32mI (245) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (245) boot: Disabling RNG early entropy source...[0m
+[0;32mI (255) cpu_start: Multicore app[0m
+[0;32mI (264) cpu_start: GPIO 44 and 43 are used as console UART I/O pins[0m
+[0;32mI (264) cpu_start: Pro cpu start user code[0m
+[0;32mI (264) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (266) app_init: Application information:[0m
+[0;32mI (270) app_init: Project name:     salt-level-detector[0m
+[0;32mI (275) app_init: App version:      3dd23d8-dirty[0m
+[0;32mI (279) app_init: Compile time:     Aug 24 2026 04:37:03[0m
+[0;32mI (284) app_init: ELF file SHA256:  39df91c23...[0m
+[0;32mI (288) app_init: ESP-IDF:          v6.0.2[0m
+[0;32mI (292) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (296) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (300) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (304) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (310) heap_init: At 3FCA0A70 len 00048CA0 (291 KiB): RAM[0m
+[0;32mI (315) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (320) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (326) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (332) spi_flash: detected chip: generic[0m
+[0;32mI (335) spi_flash: flash io: dio[0m
+[0;33mW (338) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (350) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (356) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (363) main_task: Started on CPU0[0m
+[0;32mI (383) main_task: Calling app_main()[0m
+[0;32mI (403) salt_level_detector: Creating LwIP core task...[0m
+[0;32mI (403) salt_level_detector: Creating a system event task...[0m
+[0;32mI (403) salt_level_detector: Creating network interface instance...[0m
+[0;32mI (413) salt_level_detector: Intializing the WiFi driver...[0m
+[0;32mI (413) pp: pp rom version: e7ae62f[0m
+[0;32mI (423) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (433) wifi:wifi driver task: 3fceeac0, prio:23, stack:6656, core=0[0m
+[0;32mI (443) wifi:wifi firmware version: 00ad238[0m
+[0;32mI (443) wifi:wifi certification version: v7.0[0m
+[0;32mI (443) wifi:config NVS flash: enabled[0m
+[0;32mI (443) wifi:config nano formatting: disabled[0m
+[0;32mI (443) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (453) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (453) wifi:Init management short buffer num: 32[0m
+[0;32mI (453) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (463) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (463) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (473) wifi:Init static rx buffer num: 10[0m
+[0;32mI (473) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (483) wifi_init: rx ba win: 6[0m
+[0;32mI (483) wifi_init: accept mbox: 6[0m
+[0;32mI (483) wifi_init: tcpip mbox: 32[0m
+[0;32mI (483) wifi_init: udp mbox: 6[0m
+[0;32mI (493) wifi_init: tcp mbox: 6[0m
+[0;32mI (493) wifi_init: tcp tx win: 5760[0m
+[0;32mI (493) wifi_init: tcp rx win: 5760[0m
+[0;32mI (503) wifi_init: tcp mss: 1440[0m
+[0;32mI (503) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (503) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (513) salt_level_detector: NVS handle open successfully.[0m
+[0;32mI (513) salt_level_detector: Found SSID in NVS: NetGEAR-24G[0m
+[0;32mI (523) salt_level_detector: Found Password in NVS.[0m
+[0;32mI (523) salt_level_detector: Configuring WiFi driver as station...[0m
+[0;32mI (533) salt_level_detector: Starting the WiFi driver...[0m
+[0;32mI (533) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (573) wifi:mode : sta (e8:f6:0a:a7:e2:64)[0m
+[0;32mI (573) wifi:enable tsf[0m
+[0;32mI (583) salt_level_detector: WIFI_EVENT_STA_START: Station mode started.[0m
+[0;32mI (583) salt_level_detector: Attempting connection...[0m
+[0;32mI (603) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (603) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (633) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (643) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (663) wifi:connected with NetGEAR-24G, aid = 6, channel 6, BW20, bssid = b4:b9:e6:c4:a2:26[0m
+[0;32mI (663) wifi:security: WPA2-PSK, phy: bgn, rssi: -48, cipher(pairwise:0x3, group:0x3), pmf:0[0m
+[0;32mI (673) wifi:pm start, type: 1[0m
+
+[0;32mI (673) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (683) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (693) salt_level_detector: WIFI_EVENT_STA_CONNECTED: Connected to AP[0m
+[0;32mI (693) salt_level_detector:   SSID: NetGEAR-24G, BSSID: b4:b9:e6:c4:a2:26, Channel: 6, AuthMode: 3[0m
+[0;32mI (703) salt_level_detector: Waiting for IP address via DHCP...[0m
+[0;32mI (703) wifi:<ba-add>idx:0 (ifx:0, b4:b9:e6:c4:a2:26), tid:6, ssn:2, winSize:64[0m
+[0;32mI (723) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (723) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1743) esp_netif_handlers: sta ip: 192.168.100.133, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;32mI (1743) salt_level_detector: IP_EVENT_STA_GOT_IP: Network Ready![0m
+[0;32mI (1743) salt_level_detector:   Assigned IP : 192.168.100.133, Gateway: 192.168.100.1, Netmask: 255.255.255.0[0m
+[0;32mI (1753) salt_level_detector: Resetting WiFi retry counter and delay.[0m
+[0;32mI (1753) salt_level_detector: Intalling new capture timer...[0m
+[0;32mI (1763) salt_level_detector: Installing new capture channel...[0m
+[0;32mI (1773) salt_level_detector: Registering capture callback...[0m
+[0;32mI (1773) salt_level_detector: Enabling capture channel...[0m
+[0;32mI (1783) salt_level_detector: Configuring Trig pin...[0m
+[0;32mI (1783) salt_level_detector: Enabling and starting capture timer...[0m
+[0;32mI (1793) salt_level_detector: Measured distance: 0.31cm, Percent height: 99.66%[0m
+[0;32mI (2303) salt_level_detector: Measured distance: 48.08cm, Percent height: 45.97%[0m
+[0;32mI (2813) salt_level_detector: Measured distance: 48.08cm, Percent height: 45.97%[0m
+[0;32mI (3323) salt_level_detector: Measured distance: 48.08cm, Percent height: 45.98%[0m
+[0;32mI (3833) salt_level_detector: Measured distance: 48.09cm, Percent height: 45.97%[0m
+[0;32mI (4343) salt_level_detector: Measured distance: 48.08cm, Percent height: 45.97%[0m
+[0;32mI (4853) salt_level_detector: Measured distance: 48.51cm, Percent height: 45.50%[0m
+[0;32mI (5363) salt_level_detector: Measured distance: 46.33cm, Percent height: 47.95%[0m
+[0;32mI (5843) wifi:<ba-add>idx:1 (ifx:0, b4:b9:e6:c4:a2:26), tid:0, ssn:0, winSize:64[0m
+[0;32mI (5873) salt_level_detector: Measured distance: 65.46cm, Percent height: 26.45%[0m
+[0;32mI (6383) salt_level_detector: Measured distance: 44.26cm, Percent height: 50.27%[0m
+[0;32mI (6893) salt_level_detector: Measured distance: 44.27cm, Percent height: 50.26%[0m
+[0;32mI (7403) salt_level_detector: Measured distance: 44.33cm, Percent height: 50.19%[0m
+[0;32mI (7913) salt_level_detector: Measured distance: 44.76cm, Percent height: 49.71%[0m
+[0;32mI (8423) salt_level_detector: Measured distance: 43.96cm, Percent height: 50.60%[0m
+[0;32mI (12013) salt_level_detector: Measured distance: 36.76cm, Percent height: 58.69%[0m
+[0;32mI (12523) salt_level_detector: Measured distance: 36.22cm, Percent height: 59.31%[0m
+[0;32mI (16113) salt_level_detector: Measured distance: 43.91cm, Percent height: 50.66%[0m
+[0;32mI (16623) salt_level_detector: Measured distance: 43.36cm, Percent height: 51.28%[0m
+[0;32mI (21753) salt_level_detector: Measured distance: 108.17cm, Percent height: -21.54%[0m
+[0;32mI (22263) salt_level_detector: Measured distance: 107.94cm, Percent height: -21.28%[0m
+[0;32mI (24313) salt_level_detector: Measured distance: 108.06cm, Percent height: -21.41%[0m
+[0;32mI (24823) salt_level_detector: Measured distance: 108.12cm, Percent height: -21.48%[0m
+[0;32mI (26873) salt_level_detector: Measured distance: 108.65cm, Percent height: -22.08%[0m
+[0;32mI (27383) salt_level_detector: Measured distance: 108.60cm, Percent height: -22.02%[0m
+[0;32mI (27893) salt_level_detector: Measured distance: 108.60cm, Percent height: -22.02%[0m
+[0;32mI (28403) salt_level_detector: Measured distance: 108.59cm, Percent height: -22.01%[0m
+[0;32mI (28913) salt_level_detector: Measured distance: 108.59cm, Percent height: -22.01%[0m
+[0;32mI (29423) salt_level_detector: Measured distance: 108.60cm, Percent height: -22.02%[0m
+[0;32mI (29933) salt_level_detector: Measured distance: 109.01cm, Percent height: -22.48%[0m
+[0;32mI (30443) salt_level_detector: Measured distance: 108.60cm, Percent height: -22.02%[0m
+[0;32mI (30953) salt_level_detector: Measured distance: 108.60cm, Percent height: -22.02%[0m
+[0;32mI (31463) salt_level_detector: Measured distance: 108.18cm, Percent height: -21.55%[0m
+[0;32mI (31973) salt_level_detector: Measured distance: 108.54cm, Percent height: -21.96%[0m
+[0;32mI (32483) salt_level_detector: Measured distance: 108.18cm, Percent height: -21.55%[0m
+[0;32mI (32993) salt_level_detector: Measured distance: 108.61cm, Percent height: -22.03%[0m
+[0;32mI (33503) salt_level_detector: Measured distance: 108.19cm, Percent height: -21.56%[0m
+[0;32mI (34013) salt_level_detector: Measured distance: 108.24cm, Percent height: -21.62%[0m
+[0;32mI (34523) salt_level_detector: Measured distance: 108.24cm, Percent height: -21.62%[0m
+[0;32mI (36573) salt_level_detector: Measured distance: 114.11cm, Percent height: -28.21%[0m
+[0;32mI (49403) salt_level_detector: Measured distance: 21.62cm, Percent height: 75.71%[0m
+[0;32mI (49913) salt_level_detector: Measured distance: 22.05cm, Percent height: 75.23%[0m
+[0;32mI (50423) salt_level_detector: Measured distance: 22.04cm, Percent height: 75.23%[0m
+[0;32mI (50933) salt_level_detector: Measured distance: 22.05cm, Percent height: 75.23%[0m
+[0;32mI (51443) salt_level_detector: Measured distance: 22.05cm, Percent height: 75.23%[0m
+[0;32mI (51953) salt_level_detector: Measured distance: 22.04cm, Percent height: 75.23%[0m
+[0;32mI (52463) salt_level_detector: Measured distance: 22.05cm, Percent height: 75.22%[0m
+[0;32mI (52973) salt_level_detector: Measured distance: 22.05cm, Percent height: 75.22%[0m
+[0;32mI (53483) salt_level_detector: Measured distance: 22.47cm, Percent height: 74.75%[0m
+[0;32mI (53993) salt_level_detector: Measured distance: 22.10cm, Percent height: 75.17%[0m
+[0;32mI (54503) salt_level_detector: Measured distance: 22.11cm, Percent height: 75.16%[0m
+[0;32mI (55013) salt_level_detector: Measured distance: 22.11cm, Percent height: 75.15%[0m
+[0;32mI (55523) salt_level_detector: Measured distance: 22.11cm, Percent height: 75.16%[0m
+[0;32mI (56033) salt_level_detector: Measured distance: 22.11cm, Percent height: 75.16%[0m
+[0;32mI (56543) salt_level_detector: Measured distance: 22.11cm, Percent height: 75.16%[0m
+[0;32mI (57053) salt_level_detector: Measured distance: 22.11cm, Percent height: 75.16%[0m
+[0;32mI (59103) salt_level_detector: Measured distance: 20.90cm, Percent height: 76.52%[0m
+[0;32mI (64233) salt_level_detector: Measured distance: 21.14cm, Percent height: 76.25%[0m
+[0;32mI (64743) salt_level_detector: Measured distance: 20.42cm, Percent height: 77.06%[0m
+[0;32mI (77573) salt_level_detector: Measured distance: 25.13cm, Percent height: 71.76%[0m
+[0;32mI (78083) salt_level_detector: Measured distance: 20.42cm, Percent height: 77.06%[0m
+[0;32mI (81673) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (91423) salt_level_detector: Measured distance: 21.93cm, Percent height: 75.36%[0m
+[0;32mI (91933) salt_level_detector: Measured distance: 52.45cm, Percent height: 41.06%[0m
+[0;32mI (92443) salt_level_detector: Measured distance: 48.27cm, Percent height: 45.77%[0m
+[0;32mI (92953) salt_level_detector: Measured distance: 47.73cm, Percent height: 46.38%[0m
+[0;32mI (93463) salt_level_detector: Measured distance: 48.76cm, Percent height: 45.21%[0m
+[0;32mI (95513) salt_level_detector: Measured distance: 44.03cm, Percent height: 50.53%[0m
+[0;32mI (96023) salt_level_detector: Measured distance: 44.45cm, Percent height: 50.05%[0m
+[0;32mI (96533) salt_level_detector: Measured distance: 43.11cm, Percent height: 51.56%[0m
+[0;32mI (97043) salt_level_detector: Measured distance: 45.42cm, Percent height: 48.97%[0m
+[0;32mI (97553) salt_level_detector: Measured distance: 45.97cm, Percent height: 48.35%[0m
+[0;32mI (98063) salt_level_detector: Measured distance: 49.54cm, Percent height: 44.33%[0m
+[0;32mI (106273) salt_level_detector: Measured distance: 54.02cm, Percent height: 39.30%[0m
+[0;32mI (106783) salt_level_detector: Measured distance: 54.88cm, Percent height: 38.34%[0m
+[0;32mI (107293) salt_level_detector: Measured distance: 54.99cm, Percent height: 38.21%[0m
+[0;32mI (107803) salt_level_detector: Measured distance: 56.51cm, Percent height: 36.50%[0m
+[0;32mI (108313) salt_level_detector: Measured distance: 55.05cm, Percent height: 38.15%[0m
+[0;32mI (110363) salt_level_detector: Measured distance: 67.58cm, Percent height: 24.06%[0m
+[0;32mI (110873) salt_level_detector: Measured distance: 68.32cm, Percent height: 23.23%[0m
+[0;32mI (111383) salt_level_detector: Measured distance: 69.17cm, Percent height: 22.28%[0m
+[0;32mI (111893) salt_level_detector: Measured distance: 75.96cm, Percent height: 14.65%[0m
+[0;32mI (112403) salt_level_detector: Measured distance: 75.52cm, Percent height: 15.14%[0m
+[0;32mI (112913) salt_level_detector: Measured distance: 75.82cm, Percent height: 14.81%[0m
+[0;32mI (113423) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (113933) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.61%[0m
+[0;32mI (114443) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (114953) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (115463) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (115973) salt_level_detector: Measured distance: 74.62cm, Percent height: 16.16%[0m
+[0;32mI (116483) salt_level_detector: Measured distance: 74.55cm, Percent height: 16.23%[0m
+[0;32mI (116993) salt_level_detector: Measured distance: 74.50cm, Percent height: 16.29%[0m
+[0;32mI (117503) salt_level_detector: Measured distance: 74.50cm, Percent height: 16.29%[0m
+[0;32mI (118013) salt_level_detector: Measured distance: 74.49cm, Percent height: 16.30%[0m
+[0;32mI (118523) salt_level_detector: Measured distance: 74.49cm, Percent height: 16.30%[0m
+[0;32mI (119033) salt_level_detector: Measured distance: 74.50cm, Percent height: 16.29%[0m
+[0;32mI (119543) salt_level_detector: Measured distance: 74.49cm, Percent height: 16.31%[0m
+[0;32mI (120053) salt_level_detector: Measured distance: 74.50cm, Percent height: 16.29%[0m
+[0;32mI (120563) salt_level_detector: Measured distance: 74.49cm, Percent height: 16.30%[0m
+[0;32mI (121073) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (121583) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (122093) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (122603) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (123113) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (123623) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (124133) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (124643) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (125153) salt_level_detector: Measured distance: 74.21cm, Percent height: 16.62%[0m
+[0;32mI (125663) salt_level_detector: Measured distance: 74.20cm, Percent height: 16.63%[0m
+[0;32mI (126173) salt_level_detector: Measured distance: 74.20cm, Percent height: 16.63%[0m
+[0;32mI (126683) salt_level_detector: Measured distance: 74.24cm, Percent height: 16.58%[0m
+[0;32mI (127193) salt_level_detector: Measured distance: 74.20cm, Percent height: 16.63%[0m
+[0;32mI (127703) salt_level_detector: Measured distance: 74.26cm, Percent height: 16.56%[0m
+[0;32mI (128213) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.51%[0m
+[0;32mI (128723) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (129233) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (129743) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (130253) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (130763) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.49%[0m
+[0;32mI (131273) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.49%[0m
+[0;32mI (131783) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.51%[0m
+[0;32mI (132293) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (132803) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (133313) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (133823) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (134333) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (134843) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (135353) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (135863) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.48%[0m
+[0;32mI (136373) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (136883) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (137393) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (137903) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (138413) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (138923) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (139433) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.48%[0m
+[0;32mI (139943) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (140453) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (140963) salt_level_detector: Measured distance: 74.26cm, Percent height: 16.56%[0m
+[0;32mI (141473) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (141983) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (142493) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (143003) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (143513) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (144023) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (144533) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (145043) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (145553) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (146063) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (146573) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (147083) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (147593) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (148103) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (148613) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (149123) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (149633) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (150143) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (150653) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.49%[0m
+[0;32mI (151163) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.48%[0m
+[0;32mI (151673) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (152183) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (152693) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (153203) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (153713) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (154223) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (154733) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (155243) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (155753) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (156263) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (156773) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (157283) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (157793) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (158303) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (158813) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.41%[0m
+[0;32mI (159323) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (159833) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (160343) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (160853) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (161363) salt_level_detector: Measured distance: 74.35cm, Percent height: 16.46%[0m
+[0;32mI (161873) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (162383) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (162893) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (163403) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (163913) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (164423) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (164933) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (165443) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (165953) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.43%[0m
+[0;32mI (166463) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (166973) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (167483) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.41%[0m
+[0;32mI (167993) salt_level_detector: Measured distance: 74.33cm, Percent height: 16.48%[0m
+[0;32mI (168503) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (169013) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (169523) salt_level_detector: Measured distance: 74.41cm, Percent height: 16.39%[0m
+[0;32mI (170033) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (170543) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (171053) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (171563) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (172073) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (172583) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (173093) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (173603) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (174113) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (174623) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (175133) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (175643) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (176153) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (176663) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (177173) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (177683) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (178193) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (178703) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (179213) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (179723) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (180233) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (180743) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (181253) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (181763) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (182273) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (182783) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (183293) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (183803) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (184313) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (184823) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (185333) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (185843) salt_level_detector: Measured distance: 74.37cm, Percent height: 16.44%[0m
+[0;32mI (186353) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (186863) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (187373) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (187883) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (188393) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (188903) salt_level_detector: Measured distance: 74.39cm, Percent height: 16.42%[0m
+[0;32mI (189413) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (189923) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (190433) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (190943) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (191453) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (191963) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (192473) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (192983) salt_level_detector: Measured distance: 74.20cm, Percent height: 16.63%[0m
+[0;32mI (193493) salt_level_detector: Measured distance: 74.63cm, Percent height: 16.15%[0m
+[0;32mI (194003) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (194513) salt_level_detector: Measured distance: 75.17cm, Percent height: 15.54%[0m
+[0;32mI (195023) salt_level_detector: Measured distance: 75.41cm, Percent height: 15.27%[0m
+[0;32mI (195533) salt_level_detector: Measured distance: 75.53cm, Percent height: 15.13%[0m
+[0;32mI (196043) salt_level_detector: Measured distance: 76.14cm, Percent height: 14.45%[0m
+[0;32mI (196553) salt_level_detector: Measured distance: 76.55cm, Percent height: 13.99%[0m
+[0;32mI (200143) salt_level_detector: Measured distance: 76.19cm, Percent height: 14.39%[0m
+[0;32mI (200653) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.69%[0m
+[0;32mI (201163) salt_level_detector: Measured distance: 75.15cm, Percent height: 15.56%[0m
+[0;32mI (201673) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (202183) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.41%[0m
+[0;32mI (202693) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (203203) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (203713) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (204223) salt_level_detector: Measured distance: 74.99cm, Percent height: 15.75%[0m
+[0;32mI (204733) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.76%[0m
+[0;32mI (205243) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (205753) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (206263) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (206773) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (207283) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (207793) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (208303) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (208813) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (209323) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (209833) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (210343) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (210853) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.42%[0m
+[0;32mI (211363) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (211873) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.87%[0m
+[0;32mI (212383) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (212893) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.41%[0m
+[0;32mI (213403) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (213913) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (214423) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.89%[0m
+[0;32mI (214933) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (215443) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (215953) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (216463) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (216973) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (217483) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (217993) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (218503) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (219013) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (219523) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (220033) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (220543) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (221053) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (221563) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (222073) salt_level_detector: Measured distance: 74.49cm, Percent height: 16.30%[0m
+[0;32mI (222583) salt_level_detector: Measured distance: 74.51cm, Percent height: 16.28%[0m
+[0;32mI (223093) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (223603) salt_level_detector: Measured distance: 74.90cm, Percent height: 15.84%[0m
+[0;32mI (224113) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (224623) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (225133) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (225643) salt_level_detector: Measured distance: 74.51cm, Percent height: 16.28%[0m
+[0;32mI (226153) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (226663) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (227173) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (227683) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (228193) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.89%[0m
+[0;32mI (228703) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (229213) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (229723) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (230233) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (230743) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (231253) salt_level_detector: Measured distance: 74.84cm, Percent height: 15.92%[0m
+[0;32mI (231763) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (232273) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (232783) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (233293) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (233803) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (234313) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (234823) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (235333) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (235843) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (236353) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (236863) salt_level_detector: Measured distance: 74.99cm, Percent height: 15.74%[0m
+[0;32mI (237373) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (237883) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (238393) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (238903) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (239413) salt_level_detector: Measured distance: 74.96cm, Percent height: 15.78%[0m
+[0;32mI (239923) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (240433) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (240943) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (241453) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (241963) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (242473) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (242983) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (243493) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (244003) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (244513) salt_level_detector: Measured distance: 74.91cm, Percent height: 15.83%[0m
+[0;32mI (245023) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (245533) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (246043) salt_level_detector: Measured distance: 74.99cm, Percent height: 15.75%[0m
+[0;32mI (246553) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (247063) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (247573) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (248083) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.81%[0m
+[0;32mI (248593) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (249103) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (249613) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (250123) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (250633) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (251143) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (251653) salt_level_detector: Measured distance: 74.97cm, Percent height: 15.76%[0m
+[0;32mI (252163) salt_level_detector: Measured distance: 74.99cm, Percent height: 15.75%[0m
+[0;32mI (252673) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.80%[0m
+[0;32mI (253183) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (253693) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (254203) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (254713) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (255223) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.60%[0m
+[0;32mI (255733) salt_level_detector: Measured distance: 74.73cm, Percent height: 16.03%[0m
+[0;32mI (256243) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (256753) salt_level_detector: Measured distance: 74.62cm, Percent height: 16.15%[0m
+[0;32mI (257263) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (257773) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (258283) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (258793) salt_level_detector: Measured distance: 75.12cm, Percent height: 15.60%[0m
+[0;32mI (259303) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (259813) salt_level_detector: Measured distance: 74.81cm, Percent height: 15.94%[0m
+[0;32mI (260323) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (260833) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (261343) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (261853) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (262363) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (262873) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.41%[0m
+[0;32mI (263383) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (263893) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (264403) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (264913) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (265423) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (265933) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (266443) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (266953) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (267463) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.41%[0m
+[0;32mI (267973) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (268483) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (268993) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (269503) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (270013) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (270523) salt_level_detector: Measured distance: 74.56cm, Percent height: 16.23%[0m
+[0;32mI (271033) salt_level_detector: Measured distance: 74.32cm, Percent height: 16.50%[0m
+[0;32mI (271543) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (272053) salt_level_detector: Measured distance: 74.25cm, Percent height: 16.57%[0m
+[0;32mI (272563) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (273073) salt_level_detector: Measured distance: 74.62cm, Percent height: 16.16%[0m
+[0;32mI (273583) salt_level_detector: Measured distance: 74.64cm, Percent height: 16.14%[0m
+[0;32mI (274093) salt_level_detector: Measured distance: 74.63cm, Percent height: 16.15%[0m
+[0;32mI (274603) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (275113) salt_level_detector: Measured distance: 74.31cm, Percent height: 16.50%[0m
+[0;32mI (275623) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (276133) salt_level_detector: Measured distance: 74.73cm, Percent height: 16.03%[0m
+[0;32mI (276643) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.42%[0m
+[0;32mI (277153) salt_level_detector: Measured distance: 74.38cm, Percent height: 16.43%[0m
+[0;32mI (277663) salt_level_detector: Measured distance: 74.42cm, Percent height: 16.39%[0m
+[0;32mI (278173) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (278683) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.35%[0m
+[0;32mI (279193) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (279703) salt_level_detector: Measured distance: 74.43cm, Percent height: 16.37%[0m
+[0;32mI (280213) salt_level_detector: Measured distance: 74.44cm, Percent height: 16.36%[0m
+[0;32mI (280723) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (281233) salt_level_detector: Measured distance: 74.50cm, Percent height: 16.29%[0m
+[0;32mI (281743) salt_level_detector: Measured distance: 74.56cm, Percent height: 16.23%[0m
+[0;32mI (282253) salt_level_detector: Measured distance: 74.56cm, Percent height: 16.23%[0m
+[0;32mI (282763) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (283273) salt_level_detector: Measured distance: 74.56cm, Percent height: 16.22%[0m
+[0;32mI (283783) salt_level_detector: Measured distance: 74.56cm, Percent height: 16.23%[0m
+[0;32mI (284293) salt_level_detector: Measured distance: 74.61cm, Percent height: 16.17%[0m
+[0;32mI (284803) salt_level_detector: Measured distance: 74.62cm, Percent height: 16.16%[0m
+[0;32mI (285313) salt_level_detector: Measured distance: 74.64cm, Percent height: 16.14%[0m
+[0;32mI (285823) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (286333) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (286843) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (287353) salt_level_detector: Measured distance: 75.05cm, Percent height: 15.68%[0m
+[0;32mI (287863) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (288373) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (288883) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (289393) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (289903) salt_level_detector: Measured distance: 74.67cm, Percent height: 16.10%[0m
+[0;32mI (290413) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (290923) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (291433) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (291943) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.61%[0m
+[0;32mI (292453) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (292963) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (293473) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (293983) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (294493) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (295003) salt_level_detector: Measured distance: 74.76cm, Percent height: 16.00%[0m
+[0;32mI (295513) salt_level_detector: Measured distance: 75.12cm, Percent height: 15.60%[0m
+[0;32mI (296023) salt_level_detector: Measured distance: 74.72cm, Percent height: 16.05%[0m
+[0;32mI (296533) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (297043) salt_level_detector: Measured distance: 74.73cm, Percent height: 16.03%[0m
+[0;32mI (297553) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (298063) salt_level_detector: Measured distance: 74.73cm, Percent height: 16.03%[0m
+[0;32mI (298573) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (299083) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.03%[0m
+[0;32mI (299593) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.03%[0m
+[0;32mI (300103) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (300613) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (301123) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (301633) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (302143) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.03%[0m
+[0;32mI (302653) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.02%[0m
+[0;32mI (303163) salt_level_detector: Measured distance: 75.16cm, Percent height: 15.55%[0m
+[0;32mI (303673) salt_level_detector: Measured distance: 75.16cm, Percent height: 15.55%[0m
+[0;32mI (304183) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (304693) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (305203) salt_level_detector: Measured distance: 74.56cm, Percent height: 16.22%[0m
+[0;32mI (305713) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (306223) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.48%[0m
+[0;32mI (306733) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (307243) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.03%[0m
+[0;32mI (307753) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.60%[0m
+[0;32mI (308263) salt_level_detector: Measured distance: 74.68cm, Percent height: 16.09%[0m
+[0;32mI (308773) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (309283) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (309793) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (310303) salt_level_detector: Measured distance: 74.75cm, Percent height: 16.01%[0m
+[0;32mI (310813) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (311323) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (311833) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (312343) salt_level_detector: Measured distance: 74.74cm, Percent height: 16.02%[0m
+[0;32mI (312853) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (313363) salt_level_detector: Measured distance: 74.84cm, Percent height: 15.91%[0m
+[0;32mI (313873) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (314383) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (314893) salt_level_detector: Measured distance: 74.81cm, Percent height: 15.95%[0m
+[0;32mI (315403) salt_level_detector: Measured distance: 74.81cm, Percent height: 15.94%[0m
+[0;32mI (315913) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (316423) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (316933) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (317443) salt_level_detector: Measured distance: 74.84cm, Percent height: 15.91%[0m
+[0;32mI (317953) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (318463) salt_level_detector: Measured distance: 74.79cm, Percent height: 15.96%[0m
+[0;32mI (318973) salt_level_detector: Measured distance: 75.22cm, Percent height: 15.49%[0m
+[0;32mI (319483) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (319993) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (320503) salt_level_detector: Measured distance: 75.26cm, Percent height: 15.44%[0m
+[0;32mI (321013) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (321523) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.95%[0m
+[0;32mI (322033) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (322543) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (323053) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.88%[0m
+[0;32mI (323563) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.87%[0m
+[0;32mI (324073) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.87%[0m
+[0;32mI (324583) salt_level_detector: Measured distance: 74.82cm, Percent height: 15.94%[0m
+[0;32mI (325093) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (325603) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.40%[0m
+[0;32mI (326113) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.41%[0m
+[0;32mI (326623) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (327133) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.48%[0m
+[0;32mI (327643) salt_level_detector: Measured distance: 75.24cm, Percent height: 15.47%[0m
+[0;32mI (328153) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (328663) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.41%[0m
+[0;32mI (329173) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.40%[0m
+[0;32mI (329683) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (330193) salt_level_detector: Measured distance: 75.22cm, Percent height: 15.48%[0m
+[0;32mI (330703) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (331213) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (331723) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (332233) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.40%[0m
+[0;32mI (332743) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (333253) salt_level_detector: Measured distance: 74.80cm, Percent height: 15.96%[0m
+[0;32mI (333763) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (334273) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (334783) salt_level_detector: Measured distance: 74.88cm, Percent height: 15.87%[0m
+[0;32mI (335293) salt_level_detector: Measured distance: 75.27cm, Percent height: 15.42%[0m
+[0;32mI (335803) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (336313) salt_level_detector: Measured distance: 74.81cm, Percent height: 15.95%[0m
+[0;32mI (336823) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (337333) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.41%[0m
+[0;32mI (337843) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (338353) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.41%[0m
+[0;32mI (338863) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (339373) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (339883) salt_level_detector: Measured distance: 74.87cm, Percent height: 15.88%[0m
+[0;32mI (340393) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (340903) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (341413) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.83%[0m
+[0;32mI (341923) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (342433) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (342943) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (343453) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.42%[0m
+[0;32mI (343963) salt_level_detector: Measured distance: 75.28cm, Percent height: 15.41%[0m
+[0;32mI (344473) salt_level_detector: Measured distance: 74.91cm, Percent height: 15.83%[0m
+[0;32mI (344983) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (345493) salt_level_detector: Measured distance: 74.85cm, Percent height: 15.90%[0m
+[0;32mI (346003) salt_level_detector: Measured distance: 75.27cm, Percent height: 15.42%[0m
+[0;32mI (346513) salt_level_detector: Measured distance: 75.29cm, Percent height: 15.40%[0m
+[0;32mI (347023) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (347533) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (348043) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.47%[0m
+[0;32mI (348553) salt_level_detector: Measured distance: 75.23cm, Percent height: 15.48%[0m
+[0;32mI (349063) salt_level_detector: Measured distance: 75.22cm, Percent height: 15.48%[0m
+[0;32mI (349573) salt_level_detector: Measured distance: 74.86cm, Percent height: 15.89%[0m
+[0;32mI (350083) salt_level_detector: Measured distance: 74.92cm, Percent height: 15.82%[0m
+[0;32mI (350593) salt_level_detector: Measured distance: 74.63cm, Percent height: 16.15%[0m
+[0;32mI (351103) salt_level_detector: Measured distance: 74.69cm, Percent height: 16.08%[0m
+[0;32mI (351613) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.76%[0m
+[0;32mI (352123) salt_level_detector: Measured distance: 74.93cm, Percent height: 15.81%[0m
+[0;32mI (352633) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (353143) salt_level_detector: Measured distance: 75.41cm, Percent height: 15.27%[0m
+[0;32mI (353653) salt_level_detector: Measured distance: 75.00cm, Percent height: 15.73%[0m
+[0;32mI (354163) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (354673) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (355183) salt_level_detector: Measured distance: 74.98cm, Percent height: 15.75%[0m
+[0;32mI (355693) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.69%[0m
+[0;32mI (356203) salt_level_detector: Measured distance: 75.03cm, Percent height: 15.70%[0m
+[0;32mI (356713) salt_level_detector: Measured distance: 75.05cm, Percent height: 15.68%[0m
+[0;32mI (357223) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.69%[0m
+[0;32mI (357733) salt_level_detector: Measured distance: 74.97cm, Percent height: 15.76%[0m
+[0;32mI (358243) salt_level_detector: Measured distance: 74.99cm, Percent height: 15.74%[0m
+[0;32mI (358753) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.68%[0m
+[0;32mI (359263) salt_level_detector: Measured distance: 75.05cm, Percent height: 15.68%[0m
+[0;32mI (359773) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (360283) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.69%[0m
+[0;32mI (360793) salt_level_detector: Measured distance: 75.03cm, Percent height: 15.70%[0m
+[0;32mI (361303) salt_level_detector: Measured distance: 75.04cm, Percent height: 15.68%[0m
+[0;32mI (361813) salt_level_detector: Measured distance: 75.09cm, Percent height: 15.62%[0m
+[0;32mI (362323) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.60%[0m
+[0;32mI (362833) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (363343) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (363853) salt_level_detector: Measured distance: 75.05cm, Percent height: 15.68%[0m
+[0;32mI (364363) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (364873) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (365383) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (365893) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.61%[0m
+[0;32mI (366403) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (366913) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (367423) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (367933) salt_level_detector: Measured distance: 75.17cm, Percent height: 15.54%[0m
+[0;32mI (368443) salt_level_detector: Measured distance: 75.16cm, Percent height: 15.55%[0m
+[0;32mI (368953) salt_level_detector: Measured distance: 75.17cm, Percent height: 15.54%[0m
+[0;32mI (369463) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (369973) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (370483) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.61%[0m
+[0;32mI (370993) salt_level_detector: Measured distance: 75.17cm, Percent height: 15.54%[0m
+[0;32mI (371503) salt_level_detector: Measured distance: 75.16cm, Percent height: 15.55%[0m
+[0;32mI (372013) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (372523) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.61%[0m
+[0;32mI (373033) salt_level_detector: Measured distance: 75.11cm, Percent height: 15.61%[0m
+[0;32mI (373543) salt_level_detector: Measured distance: 75.10cm, Percent height: 15.62%[0m
+[0;32mI (374053) salt_level_detector: Measured distance: 75.09cm, Percent height: 15.62%[0m
+[0;32mI (374563) salt_level_detector: Measured distance: 65.54cm, Percent height: 26.36%[0m
+[0;32mI (375073) salt_level_detector: Measured distance: 56.75cm, Percent height: 36.24%[0m
+[0;32mI (375583) salt_level_detector: Measured distance: 46.46cm, Percent height: 47.80%[0m
+[0;32mI (377633) salt_level_detector: Measured distance: 46.51cm, Percent height: 47.74%[0m
+[0;32mI (378143) salt_level_detector: Measured distance: 47.73cm, Percent height: 46.38%[0m
+[0;32mI (386353) salt_level_detector: Measured distance: 45.42cm, Percent height: 48.96%[0m
+[0;32mI (386863) salt_level_detector: Measured distance: 45.36cm, Percent height: 49.03%[0m
+[0;32mI (387373) salt_level_detector: Measured distance: 44.95cm, Percent height: 49.50%[0m
+[0;32mI (387883) salt_level_detector: Measured distance: 44.94cm, Percent height: 49.51%[0m
+[0;32mI (388393) salt_level_detector: Measured distance: 44.94cm, Percent height: 49.50%[0m
+[0;32mI (388903) salt_level_detector: Measured distance: 44.94cm, Percent height: 49.51%[0m
+[0;32mI (389413) salt_level_detector: Measured distance: 44.93cm, Percent height: 49.51%[0m
+[0;32mI (389923) salt_level_detector: Measured distance: 45.36cm, Percent height: 49.03%[0m
+[0;32mI (390433) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (390943) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (391453) salt_level_detector: Measured distance: 45.31cm, Percent height: 49.09%[0m
+[0;32mI (391963) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (392473) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (392983) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (393493) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (394003) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.11%[0m
+[0;32mI (394513) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (395023) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (395533) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (396043) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (396553) salt_level_detector: Measured distance: 45.31cm, Percent height: 49.09%[0m
+[0;32mI (397063) salt_level_detector: Measured distance: 45.29cm, Percent height: 49.11%[0m
+[0;32mI (397573) salt_level_detector: Measured distance: 45.31cm, Percent height: 49.09%[0m
+[0;32mI (398083) salt_level_detector: Measured distance: 45.31cm, Percent height: 49.09%[0m
+[0;32mI (398593) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (399103) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (399613) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (400123) salt_level_detector: Measured distance: 45.31cm, Percent height: 49.09%[0m
+[0;32mI (400633) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (401143) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (401653) salt_level_detector: Measured distance: 45.30cm, Percent height: 49.10%[0m
+[0;32mI (402163) salt_level_detector: Measured distance: 45.29cm, Percent height: 49.11%[0m
+[0;32mI (402673) salt_level_detector: Measured distance: 45.31cm, Percent height: 49.09%[0m
+[0;32mI (403183) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (403693) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (404203) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (404713) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (405223) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (405733) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (406243) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (406753) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.16%[0m
+[0;32mI (407263) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (407773) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (408283) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (408793) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (409303) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (409813) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.16%[0m
+[0;32mI (410323) salt_level_detector: Measured distance: 45.25cm, Percent height: 49.16%[0m
+[0;32mI (410833) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (411343) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (411853) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (412363) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (412873) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (413383) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (413893) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.16%[0m
+[0;32mI (414403) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (414913) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (415423) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (415933) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (416443) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.16%[0m
+[0;32mI (416953) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (417463) salt_level_detector: Measured distance: 45.17cm, Percent height: 49.25%[0m
+[0;32mI (417973) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (418483) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (418993) salt_level_detector: Measured distance: 44.76cm, Percent height: 49.71%[0m
+[0;32mI (419503) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (420013) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (420523) salt_level_detector: Measured distance: 45.24cm, Percent height: 49.17%[0m
+[0;32mI (421033) salt_level_detector: Measured distance: 45.61cm, Percent height: 48.75%[0m
+[0;32mI (421543) salt_level_detector: Measured distance: 45.61cm, Percent height: 48.75%[0m
+[0;32mI (422053) salt_level_detector: Measured distance: 45.61cm, Percent height: 48.76%[0m
+[0;32mI (422563) salt_level_detector: Measured distance: 45.61cm, Percent height: 48.76%[0m
+[0;32mI (423073) salt_level_detector: Measured distance: 45.60cm, Percent height: 48.76%[0m
+[0;32mI (423583) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (424093) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (424603) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (425113) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (425623) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (426133) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (426643) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (427153) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (427663) salt_level_detector: Measured distance: 45.17cm, Percent height: 49.24%[0m
+[0;32mI (428173) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (428683) salt_level_detector: Measured distance: 45.60cm, Percent height: 48.77%[0m
+[0;32mI (429193) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (429703) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (430213) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (430723) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (431233) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (431743) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (432253) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (432763) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (433273) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (433783) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (434293) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (434803) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (435313) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (435823) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (436333) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (436843) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (437353) salt_level_detector: Measured distance: 45.60cm, Percent height: 48.76%[0m
+[0;32mI (437863) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (438373) salt_level_detector: Measured distance: 45.19cm, Percent height: 49.23%[0m
+[0;32mI (438883) salt_level_detector: Measured distance: 45.17cm, Percent height: 49.25%[0m
+[0;32mI (439393) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (439903) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (440413) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (440923) salt_level_detector: Measured distance: 45.60cm, Percent height: 48.76%[0m
+[0;32mI (441433) salt_level_detector: Measured distance: 45.60cm, Percent height: 48.77%[0m
+[0;32mI (441943) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (442453) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.24%[0m
+[0;32mI (442963) salt_level_detector: Measured distance: 45.18cm, Percent height: 49.23%[0m
+[0;32mI (443473) salt_level_detector: Measured distance: 45.97cm, Percent height: 48.35%[0m
+[0;32mI (443983) salt_level_detector: Measured distance: 45.55cm, Percent height: 48.83%[0m
+[0;32mI (444493) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (445003) salt_level_detector: Measured distance: 44.76cm, Percent height: 49.71%[0m
+[0;32mI (445513) salt_level_detector: Measured distance: 46.33cm, Percent height: 47.94%[0m
+[0;32mI (446023) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.79%[0m
+[0;32mI (446533) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.78%[0m
+[0;32mI (447043) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (447553) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (448063) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (448573) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (449083) salt_level_detector: Measured distance: 45.11cm, Percent height: 49.31%[0m
+[0;32mI (449593) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.77%[0m
+[0;32mI (450103) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (450613) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (451123) salt_level_detector: Measured distance: 45.13cm, Percent height: 49.30%[0m
+[0;32mI (451633) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.78%[0m
+[0;32mI (452143) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.31%[0m
+[0;32mI (452653) salt_level_detector: Measured distance: 45.13cm, Percent height: 49.30%[0m
+[0;32mI (453163) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (453673) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (454183) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.77%[0m
+[0;32mI (454693) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.31%[0m
+[0;32mI (455203) salt_level_detector: Measured distance: 45.13cm, Percent height: 49.30%[0m
+[0;32mI (455713) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (456223) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.30%[0m
+[0;32mI (456733) salt_level_detector: Measured distance: 45.12cm, Percent height: 49.31%[0m
+[0;32mI (457243) salt_level_detector: Measured distance: 45.13cm, Percent height: 49.30%[0m
+[0;32mI (457753) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.77%[0m
+[0;32mI (458263) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.78%[0m
+[0;32mI (458773) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (459283) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (459793) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (460303) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (460813) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.78%[0m
+[0;32mI (461323) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.77%[0m
+[0;32mI (461833) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.78%[0m
+[0;32mI (462343) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.77%[0m
+[0;32mI (462853) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (463363) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m
+[0;32mI (463873) salt_level_detector: Measured distance: 44.69cm, Percent height: 49.78%[0m
+[0;32mI (464383) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.77%[0m
+[0;32mI (464893) salt_level_detector: Measured distance: 44.68cm, Percent height: 49.79%[0m
+[0;32mI (465403) salt_level_detector: Measured distance: 44.70cm, Percent height: 49.78%[0m

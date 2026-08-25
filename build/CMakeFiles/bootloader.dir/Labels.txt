@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/CMakeFiles/bootloader
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/CMakeFiles/bootloader.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/CMakeFiles/bootloader-complete.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
