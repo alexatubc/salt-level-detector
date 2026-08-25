@@ -1,6 +1,0 @@
-"-specs=/home/alex12/alex12/programming/esp32-projects/salt-level-detector/build/bootloader/specs/picolibc.specs"
--mlongcalls
--fno-builtin-memcpy
--fno-builtin-memset
--fno-builtin-bzero
--fno-rtti

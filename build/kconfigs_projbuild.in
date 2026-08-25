@@ -1,7 +1,0 @@
-source "/home/alex12/.espressif/v6.0.2/esp-idf/components/app_update/Kconfig.projbuild"
-source "/home/alex12/.espressif/v6.0.2/esp-idf/components/bootloader/Kconfig.projbuild"
-source "/home/alex12/.espressif/v6.0.2/esp-idf/components/esp_app_format/Kconfig.projbuild"
-source "/home/alex12/.espressif/v6.0.2/esp-idf/components/esp_rom/Kconfig.projbuild"
-source "/home/alex12/.espressif/v6.0.2/esp-idf/components/esptool_py/Kconfig.projbuild"
-source "/home/alex12/.espressif/v6.0.2/esp-idf/components/partition_table/Kconfig.projbuild"
-source "/home/alex12/alex12/programming/esp32-projects/salt-level-detector/main/Kconfig.projbuild"
