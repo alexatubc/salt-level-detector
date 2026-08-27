@@ -1,4 +1,4 @@
-# Salt level sensor
+# Salt Level Detector
 
 ## Introduction
 
