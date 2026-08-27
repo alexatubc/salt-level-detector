@@ -46,7 +46,7 @@ Adjust the constants in `main/salt-level-detector.c`, with an emphasis on fillin
 e-mail (if sending through Gmail, use [this](https://randomnerdtutorials.com/esp32-send-email-smtp-server-arduino-ide/) as a reference)
 and the barrel height.
 
-Use the following to build the project (in the project directory, not the `main/` directory):
+Use the following to build the project:
 ```
 idf.py build
 ```
