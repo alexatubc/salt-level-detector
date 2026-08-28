@@ -8,7 +8,7 @@ slowly use it. The purpose of this project is to notify the user when the salt h
 
 ### How It Works
 
-1. The microcontroller initializes and connects to the Wi-Fi network (credentials are saved to 
+1. The microcontroller initializes and connects to the Wi-Fi network (credentials are saved in the event of an unexpected interrupt).
 2. The sensor takes an average reading over a period of time and converts this to a percentage.
 3. If the average reading exceeds the threshold, the microcontroller uses the SMTP protocol to send an e-mail.
 
